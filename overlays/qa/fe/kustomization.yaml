@@ -1,6 +1,6 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-namespace: cs-grad-thesis-qa
+namespace: ice-gs-thesis-qa
 namePrefix: qa-
 patchesStrategicMerge:
 - ingress.yaml
