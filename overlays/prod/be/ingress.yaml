@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: be-ingress
+  annotations:
+    kubernetes.io/ingress.class: 'nginx'
+    cert-manager.io/cluster-issuer: 'letsencrypt-clusterissuer'
+spec:
+  tls:
+    - hosts:
+        - cssys.scg.skku.ac.kr
+      secretName: cs-grad-thesis-tls
+  rules:
+    - host: cssys.scg.skku.ac.kr
+      http:
+        paths:
+          - backend:
+              service:
+                name: be-service
+                port:
+                  number: 80
+            path: /v1
+            pathType: Prefix

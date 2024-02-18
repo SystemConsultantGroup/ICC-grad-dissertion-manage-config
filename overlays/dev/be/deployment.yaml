@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: be-deployment
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: dev-be
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: dev-be
+    spec:
+      containers:
+        - image: registry.scg.skku.ac.kr/cs-grad-thesis-be
+          imagePullPolicy: Always
+          name: be
+          ports:
+            - containerPort: 8000
+          envFrom:
+           - configMapRef:
+               name: cs-grad-thesis-config

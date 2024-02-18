@@ -1,0 +1,13 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: cs-grad-thesis-qa
+namePrefix: qa-
+patchesStrategicMerge:
+- ingress.yaml
+- deployment.yaml
+- service.yaml
+resources:
+- ../../../base/be
+images:
+- name: registry.scg.skku.ac.kr/ice-gs-thesis-be
+  newTag: qa0
