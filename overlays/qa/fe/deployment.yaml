@@ -13,11 +13,8 @@ spec:
         app.kubernetes.io/name: qa-fe
     spec:
       containers:
-        - image: registry.scg.skku.ac.kr/cs-grad-thesis-fe
+        - image: registry.scg.skku.ac.kr/ice-gs-thesis-fe
           imagePullPolicy: Always
           name: fe
           ports:
             - containerPort: 3000
-          envFrom:
-           - configMapRef:
-               name: cs-grad-thesis-qa-config
