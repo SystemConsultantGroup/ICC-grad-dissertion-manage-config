@@ -5,6 +5,7 @@ metadata:
   annotations:
     kubernetes.io/ingress.class: 'nginx'
     cert-manager.io/cluster-issuer: 'letsencrypt-clusterissuer'
+    nginx.ingress.kubernetes.io/proxy-body-size: '200m' # 최대 파일 용량 200 MB 로 세팅
 spec:
   tls:
     - hosts:
