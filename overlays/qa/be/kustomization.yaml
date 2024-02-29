@@ -10,4 +10,4 @@ resources:
 - ../../../base/be
 images:
 - name: registry.scg.skku.ac.kr/ice-gs-thesis-be
-  newTag: qa5
+  newTag: qa6
