@@ -10,4 +10,4 @@ resources:
 - ../../../base/fe
 images:
 - name: registry.scg.skku.ac.kr/ice-gs-thesis-fe
-  newTag: d0b2f6aa7c799f890ac44a12a6d0ec4a65482fc1
+  newTag: 9ab629e5358ec6e80c057248f13ba73056f624f1
