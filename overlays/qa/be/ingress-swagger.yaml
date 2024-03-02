@@ -6,7 +6,6 @@ metadata:
   name: be-swagger-ingress
   annotations:
     kubernetes.io/ingress.class: 'nginx'
-    nginx.ingress.kubernetes.io/rewrite-target: /api/$2
 spec:
   tls:
     - hosts:
@@ -21,5 +20,5 @@ spec:
                 name: be-service
                 port:
                   number: 80
-            path: /swagger(/|$)(.*)
+            path: /api
             pathType: ImplementationSpecific
