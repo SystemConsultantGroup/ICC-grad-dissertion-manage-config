@@ -11,4 +11,4 @@ resources:
 - ingress-swagger.yaml
 images:
 - name: registry.scg.skku.ac.kr/ice-gs-thesis-be
-  newTag: qa12
+  newTag: qa13
