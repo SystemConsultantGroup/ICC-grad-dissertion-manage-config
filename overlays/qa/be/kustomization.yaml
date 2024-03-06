@@ -3,12 +3,12 @@ kind: Kustomization
 namespace: ice-gs-thesis-qa
 namePrefix: qa-
 patchesStrategicMerge:
-  - ingress.yaml
-  - deployment.yaml
-  - service.yaml
+- ingress.yaml
+- deployment.yaml
+- service.yaml
 resources:
-  - ../../../base/be
-  - ingress-swagger.yaml
+- ../../../base/be
+- ingress-swagger.yaml
 images:
-  - name: harbor.k8s.scg.skku.ac.kr/library/ice-gs-thesis-be
-    newTag: qa1
+- name: harbor.k8s.scg.skku.ac.kr/library/ice-gs-thesis-be
+  newTag: 5d4d6c0eba77d260df5d288ee58c36a1870bbfac
