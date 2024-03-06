@@ -12,8 +12,10 @@ spec:
       labels:
         app.kubernetes.io/name: fe
     spec:
+      imagePullSecrets:
+        - name: regcred
       containers:
-        - image: registry.scg.skku.ac.kr/ice-gs-thesis-fe
+        - image: harbor.k8s.scg.skku.ac.kr/library/nginx
           imagePullPolicy: Always
           name: fe
           ports:
