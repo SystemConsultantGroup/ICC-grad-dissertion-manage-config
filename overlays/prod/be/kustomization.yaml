@@ -3,11 +3,11 @@ kind: Kustomization
 namespace: cs-grad-thesis
 namePrefix: prod-
 patchesStrategicMerge:
-- ingress.yaml
-- deployment.yaml
-- service.yaml
+  - ingress.yaml
+  - deployment.yaml
+  - service.yaml
 resources:
-- ../../../base/be
+  - ../../../base/be
 images:
-- name: registry.scg.skku.ac.kr/cs-grad-thesis-be
-  newTag: prod0
+  - name: registry.scg.skku.ac.kr/cs-grad-thesis-be
+    newTag: prod0

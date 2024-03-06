@@ -13,7 +13,7 @@ spec:
         app.kubernetes.io/name: qa-be
     spec:
       containers:
-        - image: registry.scg.skku.ac.kr/ice-gs-thesis-be
+        - image: harbor.k8s.scg.skku.ac.kr/library/ice-gs-thesis-be
           imagePullPolicy: Always
           name: be
           ports:
