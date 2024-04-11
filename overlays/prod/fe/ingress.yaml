@@ -8,10 +8,10 @@ metadata:
 spec:
   tls:
     - hosts:
-        - cssys.scg.skku.ac.kr
-      secretName: cs-grad-thesis-tls
+        - grad.icc.skku.ac.kr
+      secretName: ice-grad-thesis-prod-tls
   rules:
-    - host: cssys.scg.skku.ac.kr
+    - host: grad.icc.skku.ac.kr
       http:
         paths:
           - backend:

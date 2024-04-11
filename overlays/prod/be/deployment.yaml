@@ -6,17 +6,15 @@ spec:
   selector:
     matchLabels:
       app.kubernetes.io/name: prod-be
+  replicas: 1
   template:
     metadata:
       labels:
         app.kubernetes.io/name: prod-be
     spec:
       containers:
-        - image: registry.scg.skku.ac.kr/cs-grad-thesis-be
+        - image: harbor.k8s.scg.skku.ac.kr/library/ice-gs-thesis-be
           imagePullPolicy: Always
           name: be
           ports:
-            - containerPort: 8000
-          envFrom:
-            - configMapRef:
-                name: cs-grad-thesis-prod-config
+            - containerPort: 4000

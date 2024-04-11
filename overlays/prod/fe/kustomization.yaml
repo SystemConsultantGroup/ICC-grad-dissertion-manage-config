@@ -1,6 +1,6 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-namespace: cs-grad-thesis
+namespace: ice-gs-thesis-qa-prod
 namePrefix: prod-
 patchesStrategicMerge:
   - ingress.yaml
@@ -9,5 +9,5 @@ patchesStrategicMerge:
 resources:
   - ../../../base/fe
 images:
-  - name: harbor.k8s.scg.skku.ac.kr/library/ice-gs-thesis-be
-    newTag: prod1
+  - name: harbor.k8s.scg.skku.ac.kr/library/ice-gs-thesis-fe
+    newTag: prod0

@@ -13,11 +13,8 @@ spec:
         app.kubernetes.io/name: prod-fe
     spec:
       containers:
-        - image: harbor.k8s.scg.skku.ac.kr/library/ice-gs-thesis-be
+        - image: harbor.k8s.scg.skku.ac.kr/library/ice-gs-thesis-fe
           imagePullPolicy: Always
           name: fe
           ports:
             - containerPort: 3000
-          envFrom:
-            - configMapRef:
-                name: cs-grad-thesis-prod-config

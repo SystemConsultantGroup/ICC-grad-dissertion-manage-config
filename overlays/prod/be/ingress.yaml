@@ -5,13 +5,14 @@ metadata:
   annotations:
     kubernetes.io/ingress.class: "nginx"
     cert-manager.io/cluster-issuer: "letsencrypt-clusterissuer"
+    nginx.ingress.kubernetes.io/proxy-body-size: "200m"
 spec:
   tls:
     - hosts:
-        - cssys.scg.skku.ac.kr
-      secretName: cs-grad-thesis-tls
+        - grad.icc.skku.ac.kr
+      secretName: ice-grad-thesis-prod-tls
   rules:
-    - host: cssys.scg.skku.ac.kr
+    - host: grad.icc.skku.ac.kr
       http:
         paths:
           - backend:
