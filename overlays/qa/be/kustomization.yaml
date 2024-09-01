@@ -9,6 +9,7 @@ patchesStrategicMerge:
 resources:
 - ../../../base/be
 - ingress-swagger.yaml
+- secret.yaml
 images:
-- name: harbor.k8s.scg.skku.ac.kr/library/ice-gs-thesis-be
-  newTag: fa61eddd091b46331299349a1b1c2e513e7b2944
+- name: jcy0308/ice-gs-thesis-be-qa
+  newTag: acdc6beac6d51bb569e6ea38cb2c35ab357668d7

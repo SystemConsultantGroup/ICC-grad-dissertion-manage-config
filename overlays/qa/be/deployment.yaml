@@ -13,8 +13,11 @@ spec:
         app.kubernetes.io/name: qa-be
     spec:
       containers:
-        - image: harbor.k8s.scg.skku.ac.kr/library/ice-gs-thesis-be
+        - image: jcy0308/ice-gs-thesis-be-qa
           imagePullPolicy: Always
           name: be
           ports:
             - containerPort: 4000
+          envFrom:
+            - secretRef:
+                name: ice-grad-secret
