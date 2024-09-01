@@ -11,4 +11,4 @@ resources:
 - ingress-swagger.yaml
 images:
 - name: harbor.k8s.scg.skku.ac.kr/library/ice-gs-thesis-be
-  newTag: acdc6beac6d51bb569e6ea38cb2c35ab357668d7
+  newTag: a4288cd9a55925cf8c5bdf3551a6a4b98dedf8b5
