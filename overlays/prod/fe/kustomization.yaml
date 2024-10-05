@@ -10,4 +10,4 @@ resources:
 - ../../../base/fe
 images:
 - name: harbor.k8s.scg.skku.ac.kr/library/ice-gs-thesis-fe
-  newTag: 875817a1bd7089bc0969f203cf9c91ca9ef617ba
+  newTag: 1890d936bb550110e37a8fc687378dd18fb6a84c
