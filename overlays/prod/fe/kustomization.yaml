@@ -11,3 +11,5 @@ resources:
 images:
 - name: harbor.k8s.scg.skku.ac.kr/library/ice-gs-thesis-fe
   newTag: b30e463d119e5e7dfccae6cbed2d227a28c56fb6
+- name: scgskku/ice-gs-thesis-fe-prod
+  newTag: b2135e3c2901a7448a3a64e5c044465476802b52
