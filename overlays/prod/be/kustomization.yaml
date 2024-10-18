@@ -6,6 +6,7 @@ patchesStrategicMerge:
 - ingress.yaml
 - deployment.yaml
 - service.yaml
+- secret.yaml
 resources:
 - ../../../base/be
 images:
