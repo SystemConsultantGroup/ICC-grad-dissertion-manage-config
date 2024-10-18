@@ -9,6 +9,7 @@ patchesStrategicMerge:
 - secret.yaml
 resources:
 - ../../../base/be
+- secret.yaml
 images:
 - name: jcy0308/ice-gs-thesis-be-prod
   newTag: eccce19d42210148ef165839c6813ff6616fd6a6
