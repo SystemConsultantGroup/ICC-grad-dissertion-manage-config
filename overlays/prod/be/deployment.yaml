@@ -21,4 +21,6 @@ spec:
           resources:
             requests:
               cpu: "1"
-            
+          envFrom:
+            - secretRef:
+                name: ice-grad-secret
