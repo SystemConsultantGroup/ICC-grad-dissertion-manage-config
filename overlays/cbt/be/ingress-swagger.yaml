@@ -1,0 +1,24 @@
+# qa 사이트에서 swagger 문서를 보려는 시도
+# NOTE: 여러 Ingress가 같은 secret을 가질 경우 https://github.com/cert-manager/cert-manager/issues/841 ('Can I have multiple Ingress resources?')
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: be-swagger-ingress
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+spec:
+  tls:
+    - hosts:
+        - qa.ice.scg.skku.ac.kr
+      secretName: cs-grad-thesis-qa-tls
+  rules:
+    - host: qa.ice.scg.skku.ac.kr
+      http:
+        paths:
+          - backend:
+              service:
+                name: be-service
+                port:
+                  number: 80
+            path: /api
+            pathType: ImplementationSpecific
