@@ -10,7 +10,7 @@ spec:
   tls:
     - hosts:
         - cbt.ice.scg.skku.ac.kr
-      secretName: cs-grad-thesis-cbt-tls
+      secretName: qa-ice-grad-secret
   rules:
     - host: cbt.ice.scg.skku.ac.kr
       http:
