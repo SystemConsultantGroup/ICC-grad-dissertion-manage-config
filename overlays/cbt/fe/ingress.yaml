@@ -8,10 +8,10 @@ metadata:
 spec:
   tls:
     - hosts:
-        - qa.ice.scg.skku.ac.kr
-      secretName: cs-grad-thesis-qa-tls
+        - cbt.ice.scg.skku.ac.kr
+      secretName: ice-grad-thesis-cbt-tls
   rules:
-    - host: qa.ice.scg.skku.ac.kr
+    - host: cbt.ice.scg.skku.ac.kr
       http:
         paths:
           - backend:
