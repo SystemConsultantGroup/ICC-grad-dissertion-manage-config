@@ -12,4 +12,4 @@ resources:
 - secret.yaml
 images:
 - name: jcy0308/ice-gs-thesis-be-qa
-  newTag: 99d67e43ccb4e76fdcb851d0ecde44bc822487e5
+  newTag: 4ef01df8a8c90ea665b23593bbf73c52849ef947
