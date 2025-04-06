@@ -10,4 +10,4 @@ resources:
 - ../../../base/fe
 images:
 - name: scgskku/ice-gs-thesis-fe-cbt
-  newTag: efe6e6279cbe3a6d819e47ebf94e0d9a052726c8
+  newTag: c1396f3f3213832c94514fe62ad1c411351ca16f
