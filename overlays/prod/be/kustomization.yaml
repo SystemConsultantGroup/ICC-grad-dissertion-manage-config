@@ -11,4 +11,4 @@ resources:
 - secret.yaml
 images:
 - name: jcy0308/ice-gs-thesis-be-prod
-  newTag: d12c22b2aff0cbc77453aa9200e387064f5c9583
+  newTag: 65ae10052634fdc3f81b994c53f87a838eb7d377
